@@ -1,8 +1,11 @@
+
+
 /**
  * Agregue "use strict"; al inicio de su archivo JavaScript para activar el modo estricto.
  * El modo estricto ayuda a detectar errores comunes y mejora la seguridad del código.
  * Referencia: https://javascript.info/strict-mode
  */
+"use Strict";
 
 
 
