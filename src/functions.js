@@ -9,16 +9,13 @@
  * setTitle("main-title", "Bienvenidos al sitio web");
  * // El contenido del elemento con id "main-title" será "Bienvenidos al sitio web"
  */
-
 const setTitle = (id, text) => {
-
     let refTitle = document.getElementById(id);
     if (refTitle) {
         refTitle.textContent = text;
     } else {
         console.warn(`No se encontró un elemento con el ID "${id}".`);
     }
-
 }
 
 /**
@@ -37,15 +34,13 @@ const setTitle = (id, text) => {
  * };
  * addRow(frameworkData, "data-frameworks");
  */
-
 const addRow = (data, idBodyTable) => {
-
     if (
         !data?.frameworkName?.trim() ||
         !data?.releaseDate?.trim() ||
         !data?.usersName?.trim() ||
         !data?.popularityPercentage?.trim()
-) {
+    ) {
         console.warn("El objeto 'data' no tiene las propiedades esperadas.");
         return;
     }
